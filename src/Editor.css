@@ -1,0 +1,33 @@
+.editor {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+}
+
+.button-manage {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.button-manage > button {
+    margin-top: 20px;
+    background-color: lightslategray;
+}
+
+@media only screen and (max-width: 800px){
+    .editor {
+        display: grid;
+        grid-template-columns: none;
+    }
+    .button-manage {
+        margin-top: 20px;
+    }
+}
+
